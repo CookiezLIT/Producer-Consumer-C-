@@ -1,0 +1,40 @@
+
+
+p(x)  = 4 + 5x + 3x^2 = (4|0| ) -> (5|1| ) -> (3|2| )
+q(x) = 1 - 5x + 7x^2 + x^4
+
+se incepe cu:
+l = lista vida
+
+head;tail la lista -> nu contin informatie
+
+T0 - READER
+T1 - 
+T2 -
+T3 -
+
+IN FISIER:
+4 0
+5 1
+3 2
+
+CITIM DIN FISIER, ADAUGAM INTR O COADA
+
+(4,0);(5,1);(1,0);(-5,1);(7,2);....
+
+
+CELALTE THREADU-URI IAU DIN COADA SI UPDATEAZA LISTA
+
+
+PROBLEMA: PRODUCATOR, CONSUMATOR
+
+WAIT-NOTIFY
+CONDITION
+
+COADA NU ARE CAPACITATE
+
+IN CURS SUNT SUGESTII DE IMPLEMENTARE; SCHEME
+
+sincronizare la nivel de lista, se blocheaza lista
+
+mutex
