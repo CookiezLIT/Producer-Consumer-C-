@@ -1,6 +1,5 @@
 #include <fstream>
 #include <string>
-#include <random>
 #include <ctime>
 #include <iostream>
 using namespace std;
@@ -8,7 +7,7 @@ using namespace std;
 ofstream fout;
 
 
-void generate_poly(string filename, int length){
+void generate_poly(string filename, int length, int max_coeficient){
     /*
      * :filename: name of the file that we are writing in
      * :length: power of the biggest exponent
@@ -20,13 +19,13 @@ void generate_poly(string filename, int length){
     srand(time(0));
 
     for(int i =0; i< length; i++){
-        fout << rand() % 1000 << " " << i << endl;
-        cout << rand() % 1000 << " " << i << endl;
+        fout << rand() % max_coeficient << " " << i << endl;
+        cout << rand() % max_coeficient << " " << i << endl;
     }
     fout.close();
 }
 
 int main(){
-    generate_poly("./data/poly1000_2.txt", 50);
+    generate_poly("./data/trivial/poly2.txt", 10, 10);
     return 0;
 }
